@@ -1,0 +1,12 @@
+<child>
+    <h4><yield from="content1"/></h4>
+    <p>Param1: {param1}</p>
+    <p>Param2: {param2}</p>
+    <h4><yield from="content2"/></h4>
+    <hr>
+
+    <script>
+        this.param1 = opts.param1;
+        this.param2 = opts.param2;
+    </script>
+</child>

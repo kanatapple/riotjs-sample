@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>RiotJS</title>
+</head>
+<body>
+    <h1>RiotJS Sample</h1>
+
+    <p>インブラウザ・コンパイル</p>
+    <in-browser-compile></in-browser-compile>
+
+    <p>プリコンパイル</p>
+    <pre-compile></pre-compile>
+
+    <p>タグの入れ子</p>
+    <parent></parent>
+
+    <p>イベントハンドラ</p>
+    <event-handler></event-handler>
+
+    <script src="node_modules/riot/riot+compiler.js"></script>
+
+    <!--In-Browser Compilation-->
+    <script src="tags/in-browser-compile.html" type="riot/tag"></script>
+
+    <script src="tags/parent.html" type="riot/tag"></script>
+    <script src="tags/child.html" type="riot/tag"></script>
+
+    <script src="tags/event-handler.html" type="riot/tag"></script>
+
+    <!--Pre-Compilation-->
+    <script src="pre-compile-tags/pre-compile.js"></script>
+
+    <!--mount tags-->
+    <script>
+        riot.mount('*');
+    </script>
+</body>
+</html>

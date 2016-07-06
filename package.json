@@ -1,0 +1,24 @@
+{
+  "name": "riotjs-quick-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "riot --type typescript --ext html pre-compile-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanatapple/riotjs-quick-start.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanatapple/riotjs-quick-start/issues"
+  },
+  "homepage": "https://github.com/kanatapple/riotjs-quick-start#readme",
+  "devDependencies": {
+    "riot": "2.5.0",
+    "typescript-simple": "5.0.2"
+  }
+}
