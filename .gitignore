@@ -1,0 +1,3 @@
+.idea/
+node_modules/
+pre-compile-tags/*.js
