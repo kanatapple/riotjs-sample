@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "riot --type typescript --ext html pre-compile-tags"
+    "start": "npm-run-all compile server",
+    "compile": "riot --type typescript --ext html pre-compile-tags",
+    "server": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,8 @@
   },
   "homepage": "https://github.com/kanatapple/riotjs-quick-start#readme",
   "devDependencies": {
+    "lite-server": "2.2.2",
+    "npm-run-all": "2.3.0",
     "riot": "2.5.0",
     "typescript-simple": "5.0.2"
   }
