@@ -1,9 +1,9 @@
 <event-handler>
-    <button onclick={click}>Click!!</button>
+    <button onclick={click}>{opts.name} Click!!</button>
 
     <script>
         this.click = function (e) {
-            alert('innerText: ' + e.target.innerText);
+            alert('[' + opts.name + ']' + 'innerText: ' + e.target.innerText);
         };
     </script>
 </event-handler>

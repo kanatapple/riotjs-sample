@@ -1,0 +1,53 @@
+<app>
+    <ul>
+        <li><a href="index.html">Indexページ</a></li>
+        <li><a href="main.html">Mainページ</a></li>
+        <li><a href="help.html">Helpページ</a></li>
+    </ul>
+
+    <content>
+    </content>
+
+    <script>
+        // TODO: もっとスマートなやり方ないか試す
+        var isFirst = true;
+
+        // URLが変更されると、このcallbackが呼ばれる
+        riot.route(function (path) {
+            var filter = document.getElementById('filter');
+            if (!isFirst) {
+                filter.classList.remove('fadeIn');
+                filter.classList.add('fadeOut');
+            }
+
+            new Promise(function (resolve) {
+                if (isFirst) {
+                    resolve();
+                }
+                else {
+                    // フェードアウトが終わったらページ切り替え
+                    filter.addEventListener('webkitAnimationEnd', function () {
+                        filter.classList.remove('fadeOut');
+                        filter.classList.add('fadeIn');
+
+                        resolve();
+                    }, false);
+                }
+            }).then(function () {
+                var tagName = 'route-' + (path || 'index');
+                riot.mount('content', tagName.replace('.html', ''));
+
+                riot.update();
+
+                isFirst = false;
+            });
+        });
+
+        // ベースパスを変更
+        riot.route.base('/');
+
+        // URL変更検知を開始
+        // autoExec を true にすると現在のURLでルーティングを行う
+        riot.route.start(true);
+    </script>
+</app>
