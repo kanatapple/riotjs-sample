@@ -1,5 +1,5 @@
 {
-  "name": "riotjs-quick-start",
+  "name": "riotjs-sample",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kanatapple/riotjs-quick-start.git"
+    "url": "git+https://github.com/kanatapple/riotjs-sample.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kanatapple/riotjs-quick-start/issues"
+    "url": "https://github.com/kanatapple/riotjs-sample/issues"
   },
-  "homepage": "https://github.com/kanatapple/riotjs-quick-start#readme",
+  "homepage": "https://github.com/kanatapple/riotjs-sample#readme",
   "devDependencies": {
     "lite-server": "2.2.2",
     "npm-run-all": "2.3.0",
