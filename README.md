@@ -1,10 +1,10 @@
-# RiotJS Quick Start
+# RiotJS Sample
 
 # Dependencies
 
  - `node` and `npm`
 
-# Quick start
+# Usage
 
 ```sh
 # install the dependencies with npm
